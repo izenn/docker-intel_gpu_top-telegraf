@@ -15,6 +15,7 @@ Ultimately the goal was to display GPU utilization for my Unraid server via Graf
 ##### `telegraf_hostname`: This fills the hostname variable under [agent] in Telegraf's config.  
 ##### `influx_url`: This fills the [urls] array under [[outputs.influxdb]] in Telegraf's config.
 ##### `influx_db`: This fills the database variable under [[outputs.influxdb]] in Telegraf's config.
+##### `influx_username`: This fills the username variable under [[outputs.influxdb]] in Telegraf's config. This is optional, leave it blank if no password is used to connect to your influx database.
 ##### `influx_passsword`: This fills the password variable under [[outputs.influxdb]] in Telegraf's config. This is optional, leave it blank if no password is used to connect to your influx database.
 ##### `influx_skip_db_creation`: This fills the skip_database_creation variable under [[outputs.influxdb]] in Telegraf's config.
 
