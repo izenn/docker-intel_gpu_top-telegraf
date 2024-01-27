@@ -6,7 +6,7 @@ WORKDIR ./opt/intel-gpu-telegraf
 
 RUN echo Starting. \
  && apt-get -q -y update \
- && apt-get -q -y install --no-install-recommends igt-gpu-tools telegraf iputils net-tools vim-enhanced\
+ && apt-get -q -y install --no-install-recommends intel-gpu-tools telegraf iputils net-tools vim-enhanced\
  && apt-get -q -y full-upgrade \
  && rm -rif /var/lib/apt/lists/* \
  && echo Finished.
