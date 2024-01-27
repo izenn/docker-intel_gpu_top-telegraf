@@ -28,10 +28,7 @@ Just add my repository: "**https://github.com/brianmiller/docker-templates**" to
 
 #### For docker direct users: <br>
  ##### Download the container
-`docker pull theoriginalbrian/intel-gpu-telegraf`
+`docker pull ghcr.io/freender/docker-intel-gpu-telegraf:master`
  ##### Start the container
-`docker run --rm -ti --privileged=true --device /dev/dri:/dev/dri --ip ipaddressforthiscontainer --network interfacetobindto --env telegraf_hostname="myhostname" --env influx_url="http://myinfluxdb:port" --env influx_db="myinfluxdb" --env influx_password="" --env influx_skip_db_creation="false"  theoriginalbrian/intel-gpu-telegraf`
-##### The actual command I use to start the container in my environment, when I'm not using Unraid.
-`docker run --rm -ti --privileged=true --device /dev/dri:/dev/dri --ip 2.2.20.29 --network br0 --env telegraf_hostname="cerebrum" --env influx_url="http://37648-influxdb1.phospher.com:8086" --env influx_db="telegraf" --env influx_password="" --env influx_skip_db_creation="false"  theoriginalbrian/intel-gpu-telegraf`
+`docker run --rm -ti --privileged=true --device /dev/dri:/dev/dri --ip ipaddressforthiscontainer --network interfacetobindto --env telegraf_hostname="myhostname" --env influx_url="http://myinfluxdb:port" --env influx_db="myinfluxdb" --env influx_password="" --env influx_skip_db_creation="false" ghcr.io/freender/docker-intel-gpu-telegraf:master`
 
-##
