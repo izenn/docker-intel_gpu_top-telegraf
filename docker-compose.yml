@@ -1,0 +1,10 @@
+services:
+  intel_gpu_top-telegraf:
+    container_name: intel_gpu_top-telegraf
+    privileged: true
+    build:
+      context: .
+    volumes:
+      - ./intel_gpu_top-telegraf:/opt/intel_gpu_top-telegraf
+    devices:
+      - /dev/dri:/dev/dri
